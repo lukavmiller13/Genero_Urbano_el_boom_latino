@@ -13,43 +13,69 @@ header {
     padding: 20px;
 }
 
+main {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(29, 185, 84, 0.5); /* Sombra verde */
+    border: 1px solid #1DB954; /* Borde verde */
+    border-radius: 10px; /* Bordes redondeados */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+    text-align: left; /* Puedes mantener el justificado si lo prefieres */
+    margin-bottom: 100px; /* Ajusta el valor según sea necesario */
+}
+
 section {
-    margin-left: 0px; 
-    margin-right: 0px; 
-    margin-bottom: 50px; 
-    max-width: 1000px; 
-    text-align: justify; 
-    line-height: 1.5; 
+    max-width: 800px;
+    margin: 0 auto; /* Centra horizontalmente el bloque dentro de main */
+    line-height: 1.5;
+    box-shadow: 0 0 8px rgba(29, 185, 84, 0.3); /* Sombra verde más suave */
+    border: 1px solid #1DB954; /* Borde verde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 20px; /* Añade espacio interno */
 }
 
 section p {
-    margin: 0; 
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
+section p strong {
+    font-weight: bold;
+}
 
-main {
-    max-width: 800px;
-    margin: 20px 100px; 
-    padding: 20px;
+/* Puedes ajustar el valor de font-size según tus preferencias */
+section p span {
+    font-size: 1.2em;
+}
+
+/* Agrega estilos para centrar la imagen específica */
+.centered-image {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Define el color verde característico de Spotify para la clase específica */
+.spotify-highlight {
+    color: #1DB954; /* Este es el color verde de Spotify, puedes ajustarlo según tus preferencias */
+    font-weight: bold; /* Otras propiedades de estilo según sea necesario */
+}
+
+canvas {
+    width: 100%;
 }
 
 .artist-container {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
 .artist-container img {
-    height: 100%; 
-    margin-right: 20px; 
-}
-
-section {
-    margin-bottom: 80px;
-}
-
-section p {
-    margin-top: 20px; 
-    margin-bottom: 20px; /* Agrega un margen inferior para la separación deseada */
+    height: 100%;
+    margin-right: 20px;
 }
 
 footer {
@@ -60,5 +86,4 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    margin-top: auto; 
 }
